@@ -1,0 +1,31 @@
+header {
+  background-color: #273338;
+  color: white;
+  height: 100px;
+  margin-bottom: 60px;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+@media (max-width: 1060px) {
+  header {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 100%;
+    padding: 30px;
+  }
+  header > div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+}

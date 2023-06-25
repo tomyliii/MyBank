@@ -1,0 +1,24 @@
+header > div > div:last-child {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+header > div > div:last-child > p:last-child {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+header > div > div:last-child > p:first-child {
+  font-family: sans-serif;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+}
+@media (max-width: 600px) {
+  header > div > div:last-child {
+    flex-direction: row-reverse;
+  }
+}

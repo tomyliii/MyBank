@@ -1,0 +1,63 @@
+section {
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 40px;
+}
+main > section > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 2.5em;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0px 2px 10px gray;
+}
+
+main > section > table {
+  margin: 0 20px 10px;
+  width: calc(100% - 40px);
+}
+
+table > tr > td {
+  padding: 10px;
+  overflow: hidden;
+}
+
+table > tr > td:first-child {
+  text-align: center;
+  color: rgb(148, 148, 148);
+  width: 120px;
+}
+tr {
+  border: red solid 3px;
+}
+
+table > tr > td:nth-child(2) {
+  text-align: left;
+  text-transform: uppercase;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  border: green solid 3px;
+}
+
+table > tr > td:last-child {
+  text-align: right;
+  min-width: 150px;
+}
+
+section > table > tr:nth-child(even) {
+  background-color: rgb(224, 224, 224);
+}
+main > section > button {
+  margin: 0 20px;
+}
+
+@media (max-width: 1060px) {
+  section {
+    margin: 0 20px 40px;
+  }
+}
