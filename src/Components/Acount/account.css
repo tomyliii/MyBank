@@ -29,9 +29,9 @@ table > tr > td:first-child {
   color: rgb(148, 148, 148);
   width: 120px;
 }
-tr {
-  border: red solid 3px;
-}
+/* tr {
+  /* border: red solid 3px; */
+/* } */
 
 table > tr > td:nth-child(2) {
   text-align: left;
@@ -41,7 +41,7 @@ table > tr > td:nth-child(2) {
   overflow-x: hidden;
   text-overflow: ellipsis;
   min-width: 0;
-  border: green solid 3px;
+  /* border: green solid 3px; */
 }
 
 table > tr > td:last-child {

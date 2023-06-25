@@ -20,9 +20,9 @@ const Account = (props) => {
 
               <td>{operation.description}</td>
               {Number.isInteger(operation.amount) ? (
-                <td>{operation.amount}.00&nbsp; €</td>
+                <td>{operation.amount}.00&nbsp;€</td>
               ) : (
-                <td>{operation.amount}&nbsp; €</td>
+                <td>{operation.amount}&nbsp;€</td>
               )}
             </tr>
           );
