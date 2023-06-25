@@ -1,7 +1,6 @@
 import "./account.css";
 import Button from "../Button/Button";
 const Account = (props) => {
-  console.log("LAAAAAA", Number.isInteger(props.accountData.balance));
   return (
     <section>
       <div style={{ backgroundColor: `${props.accountData.color}` }}>
@@ -13,20 +12,22 @@ const Account = (props) => {
         )}
       </div>
       <table>
-        {props.accountData.operations.map((operation, index) => {
-          return (
-            <tr key={index}>
-              <td>{operation.date}</td>
+        <tbody>
+          {props.accountData.operations.map((operation, index) => {
+            return (
+              <tr key={index}>
+                <td>{operation.date}</td>
 
-              <td>{operation.description}</td>
-              {Number.isInteger(operation.amount) ? (
-                <td>{operation.amount}.00&nbsp;€</td>
-              ) : (
-                <td>{operation.amount}&nbsp;€</td>
-              )}
-            </tr>
-          );
-        })}
+                <td>{operation.description}</td>
+                {Number.isInteger(operation.amount) ? (
+                  <td>{operation.amount}.00&nbsp;€</td>
+                ) : (
+                  <td>{operation.amount}&nbsp;€</td>
+                )}
+              </tr>
+            );
+          })}
+        </tbody>
       </table>
       <Button />
     </section>

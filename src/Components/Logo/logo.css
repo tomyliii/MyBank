@@ -4,3 +4,8 @@ header > div > h1 {
   font-weight: 700;
   font-family: "Oswald", sans-serif;
 }
+@media (max-width: 600px) {
+  header > div > h1 {
+    font-size: 2em;
+  }
+}

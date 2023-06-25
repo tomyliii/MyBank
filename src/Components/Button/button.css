@@ -17,3 +17,9 @@ section > div:last-child > button:hover {
   background-color: lightgrey;
   color: white;
 }
+
+@media (max-width: 600px) {
+  section > div:last-child > button {
+    font-size: 0.8em;
+  }
+}

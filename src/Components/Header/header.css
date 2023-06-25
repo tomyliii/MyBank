@@ -21,11 +21,12 @@ header > div {
 @media (max-width: 600px) {
   header {
     height: 100%;
-    padding: 30px;
+    padding: 30px 30px 15px;
+    margin-bottom: 30px;
   }
   header > div {
     flex-direction: column;
     align-items: flex-start;
-    gap: 30px;
+    gap: 15px;
   }
 }
